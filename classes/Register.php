@@ -12,9 +12,7 @@ class Register
             $dbObj = new DB();
 
             return $dbObj->insert($data, 'users');
-        }else{
-            return false;
         }
-        return 'проверьте правельность ввода пароля';
+        return 'проверьте правильность ввода пароля';
     }
 }
