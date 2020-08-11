@@ -4,7 +4,7 @@ class Register
 {
     public static function registerUser($data)
     {
-        if ($data['password'] == $data['password_repeat'] and ture) {
+        if ($data['password'] == $data['password_repeat']) {
             unset($data['password_repeat']);
 
             $data['password'] = md5($data['password'] . 'pass');
